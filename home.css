@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'open sans' sans-serif ;
+   background-color: rgba(255, 0, 0, 0.59);
+}
+
+/* styling the header */
+.header {
+   display: flex;
+   margin: 10px;
+   padding: 5px;
+   margin-top: 5px;
+   border: 1px solid rgb(77, 70, 58);
+   box-shadow: 10px 10px 20px #324438ad;
+   font-weight: bold;
+   background-color: rgba(245, 245, 245, 0.697);
+}
+
+nav {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo, img {
+   margin: 10px;
+   height: 50px;
+   width: 130px;
+   margin-top: -3px;
+}
+
+.header1 {
+   display: flex;
+}
+
+.header1 li {
+   list-style: none;
+   padding: 12px;
+}
+
+.header1 li a {
+   text-decoration: none;
+   color: black;
+   padding: 30px;
+}
+
+.profile img{
+   width: 70px;
+   height: 50px;
+   margin: 10px;
+   margin-top: -5px;
+
+}
+
+a, .pcaption {
+   margin-top: -20px;
+   color: black;
+   text-decoration: none;
+   padding: 10px;
+} 
+
+/* Header styling complete */
+
+
+/* styling main - section1 of main*/
+
+.hero {
+   width: 80%;
+   overflow: hidden;
+   margin: 10px;
+   display: flex;  
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .boxform {
+    background-color: #ffffff;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex: 1 1 100%;
+    box-shadow: 0 0 20px 6px #090b6ff4;
+}
+
+.boxform .form {
+    background-color: #b004e5;
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: contents;
+    justify-content: flex-start;
+}
+
+
+
+
+ /* Styling section3 */
+ .section3 {
+    background: white;
+ }
+
+ /* styling tthe section3 h2 */
+ .section3 h2 {
+    font-size: 30px;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.612);
+ }
+
+ /* styling the middle word of the h2 text purple */
+ .section3 h2 span {
+    color: #c56fff;
+ }
+
+ /* styling the sub parent div section3-1 and putting the contents of the 4 divs inside in a row */
+ .section3-1 {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: 80px;
+    margin-left: 180px;
+ }
+
+ /* styling the divs individually so they stay in a horizontal row as well as pllacing the play button in the middle of the image*/
+ .divs4 {
+    flex: 1;
+    max-width: 25%;
+    position: relative; /* Establish a positioning context */
+    margin: 20px;
+ }
+
+ /* since there are 2 images, the larger image should fill up the space */
+/* while the smaller image should be centered */
+.smaller-img {
+   position: absolute; /* Position relative to the container */
+   top: 50%; /* Move to the center vertically */
+   left: 50%; /* Move to the center horizontally */
+   transform: translate(-80%, -190%); /* Adjust for the smaller image's size */
+   width: 50px; /* Adjust the size of the smaller image */
+ }
+
+
+/* styling the h3 in divs4 */
+.divs4 h3 {
+   color: black;
+   font-size: 18px;
+   font-weight: bold;
+   margin: 7px;
+}
+
+/* styling the p in divs4 */
+.divs4 p {
+   color: #56575a;
+   font-size: 13px;
+   margin: 7px;
+   line-height: 1.5;
+}
+
+/* styling divs4 h4 and image div */
+.img4 {
+   margin: 7px;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+}
+
+/* styling the h4 alone */
+.img4 h4 {
+   font-size: 13px;
+   color: #c56fff;
+   margin-left: 15px;
+   padding: 6px;
+}
+
+ /* arranging all the stars in a row and adding colour */
+ .stars {
+    display: flex;
+    flex-direction: row;
+    color: #c56fffa8;
+    margin: 7px;
+ }
+
+ /* styling the last star with a seperate colour */
+ .stars span {
+   color: #dadadfce;
+ }
+
+ /* styling the last p in .stars */
+ .stars p {
+   color: #c56fff;
+   margin-left: 60px;
+   margin-top: -2px;
+}
+/* Section3 done and dusted */
+
+
+
+
+
+
+
+
+/* styling the foooter */
+.footer {
+   width: 70%;
+   overflow: hidden;
+   margin: 10px;
+   display: flex;
+   flex: 1 1 100%;
+   justify-content: space-between;
+   margin-left: 140px; 
+   margin: 0 auto;
+   margin-top: 80px;
+   padding: 40px;
+   cursor: pointer;
+}
+
+.footer li {
+   list-style: none;
+   padding: 15px 15px;
+   text-decoration: none;
+}
+
+.footer li a:hover {
+   color: rgba(255, 68, 0, 0.942);
+}
+
+.footer1 {
+   color: rgba(255, 255, 255, 0.811);
+   font-weight: bolder;
+   font-size: 18px;
+}
+
+.f1 a {
+   color: rgba(255, 255, 255, 0.358);
+   font-size: 14px;
+}
+
+.footer2 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.f2 a {
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 14px;  
+}
+
+.footer3 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.f3 a {
+    color: rgba(255, 255, 255, 0.358);
+    font-size: 14px;  
+}
+
+.footer4 {
+    color: rgba(255, 255, 255, 0.709);
+    font-weight: bolder;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f4 a {
+color: white;
+}
+
+.f4 li  {
+   display: flex;
+   justify-content: center;
+}
+
+.f4 li a {
+   padding: 10px;
+   background-color: rgba(255, 68, 0, 0.942);
+   border-radius: 50px;
+   margin: 5px;
+}
+
+/* changing the highlight colour */
+*::selection {
+    background: rgba(255, 68, 0, 0.303); 
+}
+ 
+/* changing the hover colour of the footer to fit the theme */
+.footer li a:hover {
+    color: rgba(255, 68, 0, 0.942);
+}
+
+.line{
+   position: absolute;
+}
