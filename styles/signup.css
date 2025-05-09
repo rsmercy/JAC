@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* space between header and footer */
+  min-height: 100vh;
+}
+
+/* styling the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgb(77, 70, 58);
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: end; /* horizontal center */
+  align-items: end; /* vertical center */
+}
+
+.text {
+  font-size: 0.75rem;
+  color: rgb(77, 70, 58);
+}
+
+/* styling the form */
+#form {
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: -1rem;
+  width: 30%;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 1px rgb(77, 70, 58);
+}
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 1px rgb(77, 70, 58);
+  background-color: rgb(77, 70, 58);
+  color: white;
+  width: 40%;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: rgb(77, 70, 58);
+}
+
+.form-text {
+  margin: 10px;
+  font-size: 0.75rem;
+  color: rgb(77, 70, 58);
+}
+
+.footer {
+  margin: 10px;
+  padding: 50px;
+  border-top: 1px solid rgb(77, 70, 58);
+}
