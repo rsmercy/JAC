@@ -63,6 +63,13 @@ input {
   border-radius: 5px;
   border: solid 1px rgb(77, 70, 58);
 }
+
+input:hover {
+  outline: none;
+  border: solid 1px #23464d;
+  box-shadow: 0 0 5px #23464d;
+}
+
 .btn {
   padding: 10px;
   margin: 10px;
