@@ -12,9 +12,9 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="header-nav">
           <figure class="logo">
-              <img src="./photos/3(1).png" alt="JAC Logo">
+              <img src="./photos/3(1).png" alt="JAC Logo" class="logo">
               <!-- <figcaption>Justa-Call-Away</figcaption> -->
           </figure>
 
@@ -22,7 +22,7 @@
             <ul class="header1">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">My Bookings</a></li>
-                <li><a href="#">Explore</a></li>
+                <li><a href="#">Request a Service</a></li>
                 <li><a href="#">Saved Contacts</a></li>
             </ul>
 
@@ -52,21 +52,23 @@
             </form>
             
             <div class="blocks">
-                <span class="block">All Services
-                    <img src="/photos/arrow-right-svgrepo-com.svg" alt="An arrow pointing right" >
-                </span>
-                <span class="block">Locations
-                    <img src="/photos/arrow-right-svgrepo-com.svg" alt="An arrow pointing right" >
-                </span>
-                <span class="block">Service Providers
-                    <img src="./photos/arrow-right-svgrepo-com.svg" alt="An arrow pointing right">
-                </span>
+                <a href="#">
+                    <span class="block">All Services
+                        <img src="/photos/arrow-right-svgrepo-com.svg" alt="An arrow pointing right" >
+                    </span>
+                    <span class="block">Locations
+                        <img src="/photos/arrow-right-svgrepo-com.svg" alt="An arrow pointing right" >
+                    </span>
+                    <span class="block">Service Providers
+                        <img src="./photos/arrow-right-svgrepo-com.svg" alt="An arrow pointing right">
+                    </span>
+                </a>
             </div>
 
            <a href="#">
             <div class="reviews">
                 <div class="overlay"></div>
-                <h3 class="review">See Our Top Reviews</h3>
+                <h3 class="review">See Our Top Reviews for the week</h3>
                 <button class="btn-review">Reviews</button>       
             </div>
            </a>
@@ -74,33 +76,40 @@
         </section>
 
         <section class="section2">
+            <div class="overlay2"></div>
             <h2 class="row-h2">Popular services</h2>
 
             <div class="row">
                 <div class="column">
                     <h4 class="colm-title">Indoor Services</h4>
                     <div class="column1">
-                        <span>Babysitting</span>
-                        <span>Plumbers</span>
-                        <span>Housekeeping</span>
+                        <a href="#">
+                            <span class="colm-span">Babysitting</span>
+                            <span class="colm-span">Plumbers</span>
+                            <span class="colm-span">Housekeeping</span>
+                        </a>
                     </div>
                 </div>
     
                 <div class="column">
                     <h4 class="colm-title">Outdoor Services</h4>
-                    <div class="column2">
-                        <span>Gardeners</span>
-                        <span>Lanscapers</span>
-                        <span>Roofers</span>
+                    <div class="column1">
+                        <a href="#">
+                            <span class="colm-span">Gardeners</span>
+                            <span class="colm-span">Lanscapers</span>
+                            <span class="colm-span">Roofers</span>
+                        </a>
                     </div>
                 </div>
     
                 <div class="column">
                     <h4 class="colm-title">Hybrid Services</h4>
-                    <div class="column3">
-                        <span>Movers</span>
-                        <span>Electricians</span>
-                        <span>Caretakers</span>
+                    <div class="column1">
+                        <a href="#">
+                            <span class="colm-span">Movers</span>
+                            <span class="colm-span">Electricians</span>
+                            <span class="colm-span">Caretakers</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -111,8 +120,7 @@
             <div class="section3-1">
                 <div class="divs4">
                     <img src="./photos/9.png" alt="image" class="larger-img" width="200px">
-                    <img src="play.png" alt="Smaller Image" class="smaller-img">
-                    <h3>Diagonal Smile</h3>
+                    <h3>Norah</h3>
                     <p>Lorem ipsum dolor sit amet, consect <br>adipiscing elit, sed do eiusmod.</p>
                     <div class="img4">
                         <img src="./photos/1.png" alt="image" width="30px" height="30px">
@@ -129,8 +137,7 @@
                 </div>
                 <div class="divs4">
                     <img src="./photos/6.png" alt="image" class="larger-img" width="200px">
-                    <img src="play.png" alt="Smaller Image" class="smaller-img">
-                    <h3>Happy Smile</h3>
+                    <h3>Mason</h3>
                     <p>Lorem ipsum dolor sit amet, consect <br> adipiscing elit, sed do eiusmod.</p>
                     <div class="img4">
                         <img src="./photos/1.png" alt="image" width="30px" height="30px">
@@ -147,8 +154,7 @@
                 </div>
                 <div class="divs4">
                     <img src="./photos/8.png" alt="image" class="larger-img" width="200px">
-                    <img src="play.png" alt="Smaller Image" class="smaller-img">
-                    <h3>Natural Smile</h3>
+                    <h3>Luke</h3>
                     <p>Lorem ipsum dolor sit amet, consect <br>adipiscing elit, sed do eiusmod.</p>
                     <div class="img4">
                         <img src="./photos/1.png" alt="image" width="30px" height="30px">
@@ -165,8 +171,7 @@
                 </div>
                 <div class="divs4">
                     <img src="./photos/7.png" alt="image" class="larger-img" width="200px">
-                    <img src="play.png" alt="Smaller Image" class="smaller-img">
-                    <h3>Sad Smile</h3>
+                    <h3>Rita</h3>
                     <p>Lorem ipsum dolor sit amet, consect <br> adipiscing elit, sed do eiusmod.</p>
                     <div class="img4">
                         <img src="./photos/1.png" alt="image" width="30px" height="30px">
@@ -189,13 +194,13 @@
 
     <footer class="footer">
         <div class="footer1">
-            <nav> Menu links
+            <nav> Links
                 <ul class="f1">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Request a service</a></li>
+                    <li><a href="#">All Services</a></li>
+                    <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
         </div>
@@ -203,11 +208,10 @@
         <div class="footer2">
             <nav> Our Services
                 <ul class="f2">
-                    <li><a href="#">web design</a></li>
-                    <li><a href="#">web development</a></li>
-                    <li><a href="#">marketing</a></li>
-                    <li><a href="#">product management</a></li>
-                    <li><a href="#">graphics design</a></li>
+                    <li><a href="#">Indoor services</a></li>
+                    <li><a href="#">Outdoor Services</a></li>
+                    <li><a href="#">Hybrid Services</a></li>
+                    <li><a href="#">Business Advertisment</a></li>
                 </ul>
             </nav>
         </div>
@@ -215,9 +219,9 @@
         <div class="footer3">
             <nav> Information
                 <ul class="f3">
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">delivery info</a></li>
-                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Make a report</a></li>
                     <li><a href="#">terms and conditions</a></li>
                 </ul>
             </nav>
@@ -234,21 +238,18 @@
                      <a href="#"><i class="fa fa-youtube"aria-hidden="true"></i></a>
                    </li>
                </ul>
+               <p class="pfoot">©justA-Call-Away 2025</p>
             </nav>
         </div>
 
-
-
-        <div class="icons">
+        <!-- <div class="icons">
             <div class="icon-wrapper"><i class="fab fa-facebook"></i></div>
             <div class="icon-wrapper"><i class="fab fa-twitter"></i></div>
             <div class="icon-wrapper"><i class="fab fa-instagram"></i></div>
             <a href="#"><i class="fa fa-twitter"aria-hidden="true"></i></a>
-           <!-- <i class="fa-brands fa-facebook"></i> gives the facbook logo a follow come circle which styles with the logo letter      -->
-        </div>
+           <i class="fa-brands fa-facebook"></i> gives the facbook logo a follow come circle which styles with the logo letter
+         </div> -->
     </div>
-    <p class="pfoot">©justA-Call-Away 2025</p>
-
     </footer>
 
 </body>

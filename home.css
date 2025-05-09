@@ -31,14 +31,14 @@ body {
    position: sticky; */
 }
 
-nav {
+.header-nav {
    display: flex;
    width: 100%;
    justify-content: space-between;
    align-items: center;
 }
 
-.logo, img {
+.logo {
    margin: 10px;
    height: 50px;
    width: 130px;
@@ -60,6 +60,10 @@ nav {
    padding: 30px;
 }
 
+.header1 li a:hover {
+   color:#19876f;
+}
+
 .profile img{
    width: 70px;
    height: 50px;
@@ -75,6 +79,9 @@ a, .pcaption {
    padding: 10px;
 } 
 
+.pcaption:hover {
+   color:#19876f;
+}
 /* Header styling complete */
 
 
@@ -95,6 +102,7 @@ a, .pcaption {
    box-sizing: border-box;
    text-align: left;
    margin: 0 auto;
+   margin-top: 40px;
    width: 100%;
    height: 100vh;
 }
@@ -148,6 +156,10 @@ h1 {
    font-size: 18px;
  }
 
+.search-btn:hover {
+   color:#0e322a;
+}
+
  .blocks{
    padding: 10px;
    position: relative;
@@ -170,12 +182,17 @@ h1 {
    padding: 10px 40px 10px 12px
  }
 
+.block:hover {
+   color:#19876f;
+}
+
  .block img {
    width: 20px;
    height: 20px;
    position: absolute;
    top: 30%;
-   transform: translateY(-50%);
+   transform: translateY(-10%);
+   margin-left: 10px;
  }
 
  .reviews{
@@ -184,9 +201,9 @@ h1 {
    background-size: cover;
    background-position: center;
    width: 37%;
-   height: 300px;
+   height: 250px;
    color: #fafafa;
-   background-color: rgba(53, 107, 95, 0.4); /* black film, adjust opacity */
+   background-color: rgba(53, 107, 95, 0.4);
    margin-left: 700px;
    overflow: hidden;
    border-radius: 30px;
@@ -199,7 +216,7 @@ h1 {
    top: 0; left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(13, 56, 43, 0.813); /* translucent black film */
+   background-color: rgba(22, 34, 30, 0.85); 
    z-index: 1;
  }
  
@@ -217,7 +234,7 @@ h1 {
 
  }
 
-.btn-review{
+.btn-review {
    background: #8fd9c0;
    border: 1px solid gray ;
    height: 50px;
@@ -225,21 +242,46 @@ h1 {
    border-radius: 10px;   
    cursor: pointer;
    font-size: 18px;
-   margin-left: 155px;
-   margin-top: 60px;
+   margin-left: 200px;
+   margin-top:40px;
 }
+
+.btn-review:hover {
+   color:#0e322a;
+}
+ 
 /* Section 1 done */
 
 
 /* Styling section 2 */
 .section2 {
+   position: relative;
+   background-image: url(/photos/pexels-khush-sandhu-872741-15477575.jpg);
+   background-size: cover;
+   background-position: center;
    display: flex;
    flex-direction: column;
    background-color: rgb(194, 217, 211);
    margin: 0 auto;
    width: 100%;
-   height: 100vh;
+   height: 120vh;
    border-radius: 30px;
+}
+
+.overlay2 {
+   position: absolute;
+   top: 0; left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(189, 205, 200, 0.813);
+   z-index: 1;
+   border-radius: 30px;
+ }
+
+.row-h2, .row, .column, .colm-title, .column1, .colm-span {
+   position: relative;
+   z-index: 2;
+   text-align: center;
 }
 
 .row-h2 {
@@ -247,32 +289,87 @@ h1 {
    font-weight: bolder;
    text-align: center;
    margin: 50px;
+   color: rgb(49, 59, 59);
+}
+
+.row {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.column  {
+   text-align: center;
+   box-sizing: border-box;
+   width: 75%;
+   height: 150px;
+   border: 1px solid rgb(77, 70, 58);
+   box-shadow: 10px 10px 20px #324438ad;
+   margin: 30px;
+   background: #c9eef6a8;
+}
+
+.colm-title {
+   font-size: 20px;
+   font-weight: 800;
+   color: rgb(59, 61, 60);
+   margin: 20px;
+   font-weight: bolder;
+}
+
+.column1 {
+   font-size: 18px;
+   color: rgb(31, 35, 35);
+   font-weight: bold;
+}
+
+.colm-span {
+   border: 1px solid rgb(77, 70, 58);
+   box-shadow: 10px 10px 20px #324438ad;
+   margin: 50px;
+   cursor: pointer;
+   width: 300px;     
+   height: 48px;       
+   padding: 10px 40px 10px 12px;
+   align-items: center;
+   border-radius: 5px;
+   box-sizing: border-box;
+   padding: 10px 40px 10px 12px;
+   margin-top: 40px;
 }
 
 
+.colm-span:hover {
+   color:#19876f;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.column {
+   transform: translateY(50px);
+   opacity: 0;
+   animation: slideUp 0.6s ease-out forwards;
+ }
+ 
+ .div-row div:nth-child(1) { animation-delay: 0s; }
+ .div-row div:nth-child(2) { animation-delay: 0.2s; }
+ .div-row div:nth-child(3) { animation-delay: 0.4s; }
+ .div-row div:nth-child(4) { animation-delay: 0.6s; }
+ 
+ @keyframes slideUp {
+   to {
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
+ 
 
  /* Styling section3 */
+
  .section3 {
-    background: white;
+    background: rgb(251, 241, 241);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
  }
 
  /* styling tthe section3 h2 */
@@ -284,40 +381,27 @@ h1 {
     color: rgba(0, 0, 0, 0.612);
  }
 
- /* styling the middle word of the h2 text purple */
+ /* styling the middle word of the h2 text green */
  .section3 h2 span {
-    color: #c56fff;
+    color: #19876f;
  }
 
  /* styling the sub parent div section3-1 and putting the contents of the 4 divs inside in a row */
  .section3-1 {
-    width: max-content;
+    width:85%;
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 100px;
-    margin: 80px;
-    margin-left: 180px;
+    margin: 50px;
+    margin-left: 100px;
  }
 
- /* styling the divs individually so they stay in a horizontal row as well as pllacing the play button in the middle of the image*/
  .divs4 {
     flex: 1;
     max-width: 25%;
-    position: relative; /* Establish a positioning context */
     margin: 20px;
  }
-
- /* since there are 2 images, the larger image should fill up the space */
-/* while the smaller image should be centered */
-.smaller-img {
-   position: absolute; /* Position relative to the container */
-   top: 50%; /* Move to the center vertically */
-   left: 50%; /* Move to the center horizontally */
-   transform: translate(-80%, -190%); /* Adjust for the smaller image's size */
-   width: 50px; /* Adjust the size of the smaller image */
- }
-
 
 /* styling the h3 in divs4 */
 .divs4 h3 {
@@ -346,7 +430,7 @@ h1 {
 /* styling the h4 alone */
 .img4 h4 {
    font-size: 13px;
-   color: #c56fff;
+   color: #19876f;
    margin-left: 15px;
    padding: 6px;
 }
@@ -355,7 +439,7 @@ h1 {
  .stars {
     display: flex;
     flex-direction: row;
-    color: #c56fffa8;
+    color: #19876f;
     margin: 7px;
  }
 
@@ -366,23 +450,28 @@ h1 {
 
  /* styling the last p in .stars */
  .stars p {
-   color: #c56fff;
+   color: #19876f;
    margin-left: 60px;
    margin-top: -2px;
 }
+
+.divs4 {
+   animation: pulse 0.6s infinite;
+ }
+ 
+ @keyframes pulse {
+   0%, 100% {
+     transform: scale(1);
+   }
+   50% {
+     transform: scale(1.05);
+   }
+ }
+ 
 /* Section3 done and dusted */
-
-
-
-
-
-
-
 
 /* styling the foooter */
 .footer {
-   width: 70%;
-   overflow: hidden;
    margin: 10px;
    display: flex;
    flex: 1 1 100%;
@@ -392,6 +481,8 @@ h1 {
    margin-top: 80px;
    padding: 40px;
    cursor: pointer;
+   background-color: rgba(0, 0, 0, 0.826);
+   text-align: center;
 }
 
 .footer li {
@@ -401,13 +492,19 @@ h1 {
 }
 
 .footer li a:hover {
-   color: rgba(255, 68, 0, 0.942);
+   color: #19876f;
+}
+
+.footer1, .footer2, .footer3 {
+   display: flex;
+   flex-direction: column;
 }
 
 .footer1 {
    color: rgba(255, 255, 255, 0.811);
    font-weight: bolder;
    font-size: 18px;
+   text-align: center;
 }
 
 .f1 a {
@@ -419,6 +516,7 @@ h1 {
     color: rgba(255, 255, 255, 0.709);
     font-weight: bolder;
     font-size: 18px;
+    text-align: center;
 }
 
 .f2 a {
@@ -430,6 +528,7 @@ h1 {
     color: rgba(255, 255, 255, 0.709);
     font-weight: bolder;
     font-size: 18px;
+    text-align: center;
 }
 
 .f3 a {
@@ -443,6 +542,7 @@ h1 {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .f4 a {
@@ -456,21 +556,25 @@ color: white;
 
 .f4 li a {
    padding: 10px;
-   background-color: rgba(255, 68, 0, 0.942);
+   background-color:#19876f;
    border-radius: 50px;
    margin: 5px;
 }
 
 /* changing the highlight colour */
 *::selection {
-    background: rgba(255, 68, 0, 0.303); 
+    background: rgba(28, 9, 3, 0.896); 
 }
  
 /* changing the hover colour of the footer to fit the theme */
 .footer li a:hover {
-    color: rgba(255, 68, 0, 0.942);
+    color:#19876f;
 }
 
 .line{
    position: absolute;
+}
+
+.pfoot {
+   color: #dadce3;
 }
