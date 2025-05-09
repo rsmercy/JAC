@@ -7,39 +7,72 @@
     <link rel="stylesheet" href="styles/signup.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="" class="logo1"
-        ><img src="photos/logo1.png" alt="justa-call-away-black-logo"
-      /></a>
-      <div class="login">
-        <div>
-          <label for="email">Email</label>
-          <input type="text" style="width: 250px" id="email" required />
+    <header class="header-wrapper">
+      <div class="header">
+        <a href="" class="logo1"
+          ><img src="photos/logo1.png" alt="justa-call-away-black-logo"
+        /></a>
+        <div class="login">
+          <div>
+            <input
+              type="text"
+              style="width: 250px"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              style="width: 250px"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" class="btn" style="font-weight: bold">
+            Login
+          </button>
+          <p class="text"><span>Forgotten password?</span></p>
         </div>
-        <div>
-          <label for="password">Password</label>
-          <input type="text" style="width: 250px" id="password" required />
-        </div>
-        <button type="submit" class="btn">Login</button>
-        <p class="text">Forgotten password?</p>
       </div>
     </header>
-    <form id="form">
-      <h2>Sign Up for free</h2>
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" required />
-      <label for="email">Email:</label>
-      <input type="text" id="email" required />
-      <label for="password">Password:</label>
-      <input type="text" id="password" required />
-      <label for="confirm-password">Re-enter Password:</label>
-      <input type="text" id="confirm-password" required />
-      <p class="form-text">
-        By clicking Sign Up, you agree to our Terms and that you have read our
-        Data Policy, including Cookie Use
-      </p>
-      <button type="submit" class="btn">Signup</button>
-    </form>
-    <footer class="footer"></footer>
+
+    <main class="main">
+      <a href=""
+        ><img
+          src="photos/african-male-plumber-fixing-sink-pipe-kitchen-124519826.webp"
+          alt="cartoon-plumber-jpeg"
+      /></a>
+      <form id="form">
+        <h2>Sign Up for free</h2>
+        <input type="text" id="fullname" placeholder="Username" required />
+        <input type="text" id="email" placeholder="Email" required />
+        <input type="text" id="password" placeholder="Password" required />
+        <input
+          type="text"
+          id="confirm-password"
+          placeholder="Re-enter password"
+          required
+        />
+        <p class="form-text">
+          By clicking Sign Up, you agree to our
+          <span class="terms-conditions">Terms </span> and that you have read
+          our <span class="terms-conditions">Data Policy</span>, including
+          <span class="terms-conditions">Cookie Use</span>
+        </p>
+        <button type="submit" class="btn" style="font-weight: bold">
+          Sign Up
+        </button>
+        <p class="form-text">Already have an account? <span>Log in</span></p>
+        <p class="form-text"><span>Become a Service Provider</span></p>
+      </form>
+    </main>
+    <footer class="footer-wrapper">
+      <div class="footer">
+        <p class="footer-text"><span>About Us</span></p>
+        <p class="footer-text"><span>Contact Us</span></p>
+        <p class="footer-text"><span>FAQs</span></p>
+      </div>
+    </footer>
   </body>
 </html>
