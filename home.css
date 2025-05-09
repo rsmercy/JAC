@@ -25,6 +25,8 @@ body {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-weight: bold;
    background-color: rgba(245, 245, 245, 0.697);
+   top: 0;
+   position: sticky;
 }
 
 nav {
@@ -38,7 +40,6 @@ nav {
    margin: 10px;
    height: 50px;
    width: 130px;
-   margin-top: -3px;
    border-radius: 15%;
 }
 
@@ -61,7 +62,7 @@ nav {
    width: 70px;
    height: 50px;
    margin: 10px;
-   margin-top: -5px;
+   margin-top: 10px;
 
 }
 
@@ -146,22 +147,33 @@ h1 {
 
  .blocks{
    padding: 10px;
-   font-size: 2vmax;
-   font-weight: bold;
+   position: relative;
  }
  
  .block {
-   margin: 50px;
+   margin: 30px;
    margin-top: 30px;
    border: 2px solid #dadce3;
    color: #fafafa;
-   height: 130px;
-   width: 130px;
    cursor: pointer;
+   font-size: 20px;
+   font-weight: bold;
+   width: 300px;     
+   height: 48px;       
+   padding: 10px 40px 10px 12px;
+   align-items: center;
+   border-radius: 5px;
+   box-sizing: border-box;
+   padding: 10px 40px 10px 12px
  }
 
-
-
+ .block img {
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 30%;
+   transform: translateY(-50%);
+ }
 
 
 
