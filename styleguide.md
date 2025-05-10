@@ -1,11 +1,9 @@
 <!-- colors -->
 
-- background-image: linear-gradient(135deg, #458a9a 30%, #b2ffd2d4 60% );
+- header/footer wrapper background image : linear-gradient(270deg, #23464d 30%, #6fffe9 70%);
 
-- background-image: linear-gradient(135deg, #458a9a 30%, #b2ffd2d4 60% );
+- text colors: rgb(77, 70, 58); #23464d; black; white;
 
-- text colors h1: color: #fafafa; box-shadow: 10px 10px 20px #324438ad; button(background color) background: #8fd9c0;
-
-<!-- fonts -->
+<!-- font -->
 
 - Font-family: Verdana, 'open sans' sans-serif;
