@@ -11,7 +11,8 @@ body {
   min-height: 100vh;
 }
 
-/* =============typography============= */
+/* ==================================== */
+/* Typography */
 
 h2 {
   font-size: 1.5rem;
@@ -45,7 +46,6 @@ span:hover {
 }
 
 /* ===================================== */
-
 /* styling the header */
 
 .header-wrapper {
@@ -56,11 +56,11 @@ span:hover {
 .login {
   display: flex;
   flex-direction: column;
-  justify-content: end; /* horizontal center */
-  align-items: end; /* vertical center */
+  justify-content: end;
+  align-items: end;
 }
-/* 
 
+/* ========================================= */
 /* styling the main */
 
 .main,
