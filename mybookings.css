@@ -1,0 +1,163 @@
+body {
+    margin: 0 auto;
+    font-family: Verdana, 'Segoe UI', Tahoma, Geneva, sans-serif;
+    background: url('./photos/img.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+header {
+    Background-image: linear-gradient(270deg, #23464d 30%, #6fffe9 70%);
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 10px 20px #324438ad;
+}
+
+nav {
+    display: flex;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0f1010;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #6fffe9;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(11, 2, 2);
+    font-weight: bold;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    color: rgb(15, 9, 9);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    color: rgb(9, 7, 7);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.overlay {
+    backdrop-filter: blur(2px);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.wrap {
+    max-height: 62vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    backdrop-filter: blur(5px);
+}
+
+.booking-button {
+    padding: 1rem;
+    background-color: #6fffe9;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(62, 60, 60);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(2px);
+}
+
+.booking-button:hover {
+    background-color: #6fffe9;
+    color: #fff;
+    border-color: #c19a6b;
+}
+
+
+footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 100px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+footer a {
+    color: #040505;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: auto;
+}
+
+footer a:hover {
+    color: #6fffe9;
+}
